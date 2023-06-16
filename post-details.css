@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(243,240,235);/* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(243,240,235,1) 0%, rgba(220,210,202,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(243,240,235,1) 0%, rgba(220,210,202,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(top,  rgba(243,240,235,1) 0%, rgba(220,210,202,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f0eb', endColorstr='dcd2ca',GradientType=0 ); /* IE6-9 */
+}
+
+.postContainer{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Playfair', serif;
+    font-size: 15px;
+    color: rgba(49,34,22,0.9);
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}
+
+.commentContainer{
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.commentBlock{
+    flex-basis: 23vw;
+    height: 46%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding: 5px;
+    font-family: 'Playfair', serif;
+    font-size: 14px;
+    cursor: all-scroll;
+    background-color: #dcd9d4;
+    border: 1px solid rgba(49,34,22,0.3);
+    border-radius: 12px;
+    box-shadow:
+            inset 0 3px 2px 0 rgba(49,34,22,0.07),
+            inset 0 6px 3px 0 rgba(255,255,255,0.8),
+            inset 0 -4.5px 3.5px 0 rgba(165,145,131,0.75),
+            inset 0 -5px 3px -2px rgba(255,255,255,0.4),
+            inset 8px 0 4px -2px rgba(255,255,255,0.8),
+            inset -9px 0 3px -2px rgba(255,255,255,0.5),
+            0 4px 4px -1px rgba(49,34,42,0.5),
+            0 8px 6px -3px rgba(49,34,22,0.3),
+            0 12px 9px -2px rgba(165,145,131,0.4),
+            0 0 4px 0 rgba(49,34,22,0.2);
+
+}
+
+.commentBlock:nth-child(5) {
+    margin-top: 20px;
+}
